@@ -19,17 +19,13 @@
 2. В правом верхнем углу выберите конфигурацию **«Tomcat Run»**.
 3. Нажмите **Run** (зелёный треугольник) или **Shift+F10**.
 4. Дождитесь в консоли сообщения вида: `INFO: Starting ProtocolHandler`.
-5. Откройте в браузере:
-   - **Главная (страница my-site):**  
-     http://localhost:8080/Tomcat_test/my-site/  
-     или  
-     http://localhost:8080/Tomcat_test/my-site/index.html
+5. Откройте в браузере: **http://localhost:8081/Tomcat_test/my-site/index.html**
 
 ### Вариант 2: Через Maven
 
 1. Откройте **Maven** (правая панель) → **Tomcat_test** → **Plugins** → **tomcat7**.
 2. Дважды щёлкните **tomcat7:run**.
-3. После запуска откройте в браузере те же адреса, что выше.
+3. После запуска откройте в браузере: **http://localhost:8081/Tomcat_test/my-site/index.html**
 
 ### Вариант 3: Терминал в IDEA
 
@@ -37,8 +33,7 @@
 mvn tomcat7:run
 ```
 
-После запуска снова используйте:  
-http://localhost:8080/Tomcat_test/my-site/
+После запуска откройте в браузере: **http://localhost:8081/Tomcat_test/my-site/index.html**
 
 ---
 
@@ -48,7 +43,7 @@ http://localhost:8080/Tomcat_test/my-site/
 
 - **Сделать:** удалите файл `src/main/webapp/my-site/index.html` (или переименуйте его).
 - **Проверка:** перезапустите Tomcat (если нужно), откройте  
-  http://localhost:8080/Tomcat_test/my-site/  
+  http://localhost:8081/Tomcat_test/my-site/index.html  
   и нажмите F12 → вкладка **Console** (или **Network**): увидите 404.
 - **Исправление:** верните `index.html` на место (или создайте заново из кода в репозитории) и обновите страницу — она снова откроется.
 
@@ -77,7 +72,7 @@ http://localhost:8080/Tomcat_test/my-site/
 
 ```
 Tomcat_test/
-├── pom.xml                    # Maven: WAR, плагин Tomcat (порт 8080, путь /Tomcat_test)
+├── pom.xml                    # Maven: WAR, плагин Tomcat (порт 8081, путь /Tomcat_test)
 ├── README.md                  # Этот файл
 ├── src/main/
 │   ├── java/                  # Исходники Java (для проекта не используются)

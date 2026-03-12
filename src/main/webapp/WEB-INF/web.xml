@@ -6,6 +6,6 @@
          version="4.0">
     <display-name>Tomcat_test — Мой первый сайт</display-name>
     <welcome-file-list>
-        <welcome-file>my-site/index.html</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>
